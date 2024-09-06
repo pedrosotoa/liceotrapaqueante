@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #005a8d;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px; /* Altura fija para el header */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%; /* Ocupa todo el alto del header */
+}
+
+.logo {
+    height: 100%; /* Ocupa todo el alto del header */
+    width: auto;
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    padding: 5px 0; /* Pequeño padding vertical para evitar que toque los bordes */
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%; /* Ocupa todo el alto del header */
+}
+
+nav ul li {
+    margin-left: 1rem; /* Espacio entre los elementos del menú */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+}
+
+main {
+    padding-top: 60px; /* Ajustado para compensar el header */
+}
+
+section {
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #005a8d;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.snapwidget-widget {
+    display: block;
+    margin: 20px auto;
+    max-width: 1000px;
+    height: 400px;
+}
